@@ -134,16 +134,25 @@ table {
 
 /*reset-FINAL------------------------------------------------------------------------*/
 
+/*Geral--------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Geral-FINAL--------------------------------------------------*/
+
 /*header -------------------------------------------------------------------------------*/
 header {
     position: relative;
-    background-color: yellow;
+    background-color: #2A9D8F;
     padding: 20px 0px;
-    height: 130px;
+    height: 97px;
 }
 
-.imgcasa {
-    width: 8%;
+.imginicio {
+    position: absolute;
+    width: 5%;
+    left: 9px;
+    top: 10px;
 }
 
 nav {
@@ -154,22 +163,37 @@ nav {
 
 /*main-------------------------------------------------------------------------------*/
 
+/*section---------------------------------------------------------------------------*/
 .titulo-principal {
     text-align: center;
     font-size: 50px;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #264653;
+}
+
 /*paragrafo----------------------------------------------------------------*/
 
 p {
-    font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #2F2F2F;
     text-align: justify;
+
 }
 
 /*paragrafo-FINAL-----------------------------------------------------------*/
 
+/*section-FINAL--------------------------------------------------------------------------*/
+
 /*ul------------------------------------------------------------------------*/
 .ul1 {
+
     display: inline-block;
     vertical-align: top;
     width: 45%;
