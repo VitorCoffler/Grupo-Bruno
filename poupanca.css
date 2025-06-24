@@ -1,207 +1,86 @@
-/*reset--------------------------------------------------------------
-http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* Reset e estrutura */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    line-height: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-ol,
-
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*reset-FINAL------------------------------------------------------------------------*/
-
-/*Geral--------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*Geral-FINAL--------------------------------------------------*/
-
-/*header -------------------------------------------------------------------------------*/
+/* Header */
 header {
-    position: relative;
-    background-color: #2A9D8F;
-    padding: 20px 0px;
-    height: 97px;
-}
-
-.imginicio {
-    position: absolute;
-    width: 5%;
-    left: 9px;
-    top: 10px;
+  background-color: #006699;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 nav {
-    position: relative;
+  margin-top: 10px;
 }
 
-/*header-FINAL-------------------------------------------------------------------------------*/
-
-/*main-------------------------------------------------------------------------------*/
-
-/*section---------------------------------------------------------------------------*/
-.titulo-principal {
-    text-align: center;
-    font-size: 50px;
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #264653;
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/*paragrafo----------------------------------------------------------------*/
-
-p {
-    position: relative;
-    margin-left: 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: #2F2F2F;
-    text-align: justify;
-
+.menu li a:hover {
+  color: #ffcc00;
 }
 
-/*paragrafo-FINAL-----------------------------------------------------------*/
-
-/*section-FINAL--------------------------------------------------------------------------*/
-
-/*ul------------------------------------------------------------------------*/
-.ul1 {
-
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-    margin-right: 15%;
-    padding: 30px;
-    font-size: italic;
+/* Container principal */
+main.container {
+  flex: 1;
+  text-align: justify;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/*ul-FINAL------------------------------------------------------------------------*/
+h1,
+h2 {
+  margin-bottom: 20px;
+}
 
-/*main-FINAL------------------------------------------------------------------------*/
+ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+strong {
+  color: #003366;
+}
+
+/* Footer */
+footer {
+  background-color: #006699;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
